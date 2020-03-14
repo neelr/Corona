@@ -95,7 +95,7 @@ export default class Index extends React.Component {
         );
     }
     async componentWillMount() {
-        var data = await (await fetch("http://b32afbfa.ngrok.io /all")).json();
+        var data = await (await fetch("http://b32afbfa.ngrok.io/all")).json();
         console.log(data);
         this.setState({
             latest: data.latest,
