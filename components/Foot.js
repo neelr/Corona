@@ -5,7 +5,7 @@ export default class Index extends React.Component {
     render () {
         return (
             <Flex p="30px">
-                <Text m="auto">Made with 💖 by <Link color="primary" href="https://neelr.dev">@neelr</Link></Text>
+                <Text m="auto">Made with 💖 by <Link sx={{color:"primary",textDecorationStyle:"wavy"}} href="https://neelr.dev">@neelr</Link></Text>
             </Flex>
         )
     }
