@@ -58,6 +58,7 @@ export default class Index extends React.Component {
                         <Bar dataKey="value" fill="grey" />
                     </BarChart>
                 </Flex>
+                <hr width="90vw"/>
                 <Flex flexDirection="column">
                     <Box width="30vw" m="auto">
                         <Select defaultValue="Italy" sx={{borderRadius:"10px"}} onChange={e => this.setState({name:e.target.value})}>
@@ -95,7 +96,7 @@ export default class Index extends React.Component {
         );
     }
     async componentWillMount() {
-        var data = await (await fetch("https://b32afbfa.ngrok.io/all")).json();
+        var data = await (await fetch("http://9a4edec9.ngrok.io/all"")).json();
         console.log(data);
         this.setState({
             latest: data.latest,
