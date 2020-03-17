@@ -108,7 +108,7 @@ export default class Index extends React.Component {
         );
     }
     async componentWillMount() {
-        var data = await (await fetch("https://9a4edec9.ngrok.io/all")).json();
+        var data = await (await fetch("https://0af3e2f8.ngrok.io")).json();
         let locations = {}
         Object.keys(data.confirmed.locations).map(p => {
             locations[p] = { history: {} }
