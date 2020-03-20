@@ -24,7 +24,7 @@ export default class Index extends React.Component {
         coronaPie: [{ name: "china", value: 1, color: "#fff" }],
         latest: {},
         county: false,
-        name: ""
+        name: "Adams, IN"
     };
     render() {
         return (
@@ -87,12 +87,12 @@ export default class Index extends React.Component {
 				    </Heading>
                     <Box width="30vw" m="auto">
                         <Select
-                            defaultValue="Italy"
                             sx={{ borderRadius: "10px" }}
                             onChange={e =>
                                 this.setState({ name: e.target.value })
                             }
                         >
+                            <option>Select a Place!</option>
                             {Object.keys(this.state.county).map(v => (
                                 <option key={v}>{v}</option>
                             ))}
